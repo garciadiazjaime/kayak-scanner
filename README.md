@@ -6,7 +6,7 @@ based on dates and airports.
 
 At the moment tries a multi city search:
 
-Origin/Destination: From where the flight starts
+Origin/Destination: From and To where the trip starts and ends.
 Airport A: Arrival's airport
 Airport B: Departure's airport
 
