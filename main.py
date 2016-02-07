@@ -56,7 +56,7 @@ def main():
     date_init = '2016-07-13'
     d1 = datetime.datetime.strptime(date_init, "%Y-%m-%d").date()
     delay_a = 30
-    delay_b = 3
+    delay_b = 30
     cont_pages = 0
     cont_flights = 0
     span_days = 9
