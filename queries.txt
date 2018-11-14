@@ -1,0 +1,48 @@
+-- GET TODAY'S prices
+SELECT
+  start_a,
+  end_a,
+  end_b,
+  price,
+  date_a,
+  date_b,
+  substr(date_query, 0,11)  as date
+ FROM kayak_two_cities
+ORDER BY date DESC, price
+
+-- GET BEST PRICES EVER
+SELECT
+  start_a,
+  end_a,
+  end_b,
+  price,
+  date_a,
+  date_b,
+  substr(date_query, 0,11)  as date
+FROM kayak_two_cities
+ORDER BY price
+LIMIT 10;
+
+
+-- GET TODAY'S prices
+SELECT
+  start,
+  end,
+  price,
+  date_a,
+  date_b,
+  substr(date_query, 0,11)  as date
+ FROM kayak_one_city
+ORDER BY date DESC, price
+
+-- GET BEST PRICES EVER
+SELECT
+  start,
+  end,
+  price,
+  date_a,
+  date_b,
+  substr(date_query, 0,11)  as date
+FROM kayak_one_city
+ORDER BY price
+LIMIT 10;
